@@ -3,22 +3,25 @@
     public abstract Character FactoryMethod();
 }
 
-// ConcreteCreator
-public class WarriorGenerator : CharacterCreator
+public class FighterGenerator : CharacterCreator
 {
-    public override Character FactoryMethod() => new Warrior();
+    public override Character FactoryMethod() => new Fighter();
 }
 
-public class ArcherGenerator : CharacterCreator
+public class RangerGenerator : CharacterCreator
 {
-    public override Character FactoryMethod() => new Archer();
+    public override Character FactoryMethod() => new Ranger();
 }
 
 public class WizardGenerator : CharacterCreator
 {
     public override Character FactoryMethod() => new Wizard();
 }
-public class AssassinGenerator : CharacterCreator
+public class RogueGenerator : CharacterCreator
 {
-    public override Character FactoryMethod() => new Assassin();
+    public override Character FactoryMethod() => new Rogue();
+}
+public class ClericGenerator : CharacterCreator
+{
+    public override Character FactoryMethod() => new Cleric();
 }
